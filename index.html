@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+  <body>
+
+      <h1 id="title">
+          SURVEY FORM
+  
+        </h1>
+    <P id="description"> This describe the data that we should collect    </P>
+
+    <form id="survey-form">
+      <Label id="name-label">  Name: <input id="name" type="text" placeholder="Enter your name" value="John" required/> </Label>
+      <p></p>
+       <Label id="email-label"> Email: <input type="email" name="email" id="email" placeholder="Enter your email" value="someone@mail.com" required>  </Label> 
+       <p></p>
+       <Label id="number-label"> Number: <input id="number" type="number" min="1" max="15" placeholder="Enter a number" value="2"></Label>
+       <p></p>
+      <select id="dropdown" name="Gender" >
+        <option value="male"> Male        </option>
+        <option value="Female" > Female </option>
+      </select>
+      <p></p>
+      <label>  Paid<input type="radio" name="Paid" value="Paid"/></label>
+      <label>Not Paid<input type="radio" name="Paid" value="Not-Paid"/></label>
+      
+
+      <p></p>
+      <label> Cleared campus<input type="checkbox" value="I have cleared campus"></label>
+      <p></p>
+      <label> Currently Working<input type="checkbox" value="I am Currently working"></label>
+
+      <label> Additional Comment: <textarea type="textarea" name="comment" > </textarea></label>
+       <button type="submit" id="submit"  value="submit" >submit </button> 
+      </form>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    
+    <script  src="js/index.js"></script>
+  </body>
+</html>
